@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: window-latest
+
+    step:
+      - name: Checkout
+        uses: action/checkout@v3
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
