@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: window-latest
 
-    step:
+    steps:
       - name: Checkout
         uses: action/checkout@v3
       - name: Setup MSBuild
